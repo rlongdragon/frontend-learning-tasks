@@ -1,0 +1,439 @@
+{
+  "pages": [
+    {
+      "title": "第一章：網頁的誕生基石 (The Static Architect)",
+      "describe": "學習 HTML 的基本結構和語法，為網頁的內容打下基礎。",
+      "tasks": [
+        {
+          "name": "任務 1.1：創世紀 - HTML 骨架",
+          "icon": "fi fi-brands-html5",
+          "difficulty": 0,
+          "describe": "了解網頁最基本的結構。",
+          "condition": "創建一個 .html 檔案，包含正確的 \u003chtml\u003e, \u003chead\u003e, \u003ctitle\u003e, \u003cbody\u003e 標籤，並在瀏覽器中成功打開顯示標題。"
+        },
+        {
+          "name": "任務 1.2：宣告世界 - Meta 資訊",
+          "icon": "fi fi-br-brand",
+          "difficulty": 0,
+          "describe": "告訴瀏覽器和搜尋引擎關於你網頁的基本資訊。",
+          "condition": "在 \u003chead\u003e 中加入 \u003cmeta charset=\"UTF-8\"\u003e 和 \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e。"
+        },
+        {
+          "name": "任務 1.3：文字的吶喊 - 標題與段落",
+          "icon": "fi fi-br-pointer-text",
+          "difficulty": 0,
+          "describe": "在網頁上顯示標題和內文。",
+          "condition": "使用 \u003ch1\u003e 到 \u003ch6\u003e 創建不同層級的標題，並使用 \u003cp\u003e 標籤添加至少一段文字。"
+        },
+        {
+          "name": "任務 1.4：連結彼端 - 超連結",
+          "icon": "fi fi-br-link-alt",
+          "difficulty": 0,
+          "describe": "讓你的網頁可以跳轉到其他地方。",
+          "condition": "使用 \u003ca\u003e 標籤創建一個可以點擊跳轉到 Google 的連結，並創建另一個跳轉到同一個資料夾下另一個 HTML 頁面的連結。"
+        },
+        {
+          "name": "任務 1.5：視覺的點綴 - 圖片",
+          "icon": "fi fi-br-picture",
+          "difficulty": 1,
+          "describe": "在網頁中嵌入圖片。",
+          "condition": "使用 \u003cimg\u003e 標籤成功顯示一張圖片，並設定 src 和 alt 屬性。"
+        },
+        {
+          "name": "任務 1.6：井然有序 - 清單",
+          "icon": "fi fi-br-list",
+          "difficulty": 1,
+          "describe": "創建項目符號清單和編號清單。",
+          "condition": "分別使用 \u003cul\u003e 和 \u003col\u003e 標籤，搭配 \u003cli\u003e 標籤，創建一個無序清單和一個有序清單。"
+        },
+        {
+          "name": "任務 1.7：區塊劃分 - Div 與 Span",
+          "icon": "fi fi-br-gallery-thumbnails",
+          "difficulty": 2,
+          "describe": "學習如何將內容分組和標記。",
+          "condition": "使用 \u003cdiv\u003e 包裹多個元素作為一個區塊，並使用 \u003cspan\u003e 包裹一小段文字來進行特定標記（雖然效果暫不明顯）。"
+        },
+        {
+          "name": "任務 1.8：語意的力量 - 結構化標籤",
+          "icon": "fi fi-br-table-layout",
+          "difficulty": 2,
+          "describe": "使用更有意義的標籤來組織你的網頁結構。",
+          "condition": "將你的頁面內容，用 \u003cheader\u003e, \u003cnav\u003e, \u003cmain\u003e, \u003carticle\u003e, \u003csection\u003e, \u003cfooter\u003e 等標籤進行合理的結構劃分。"
+        },
+        {
+          "name": "任務 1.9：收集情報 - 表單基礎",
+          "icon": "fi fi-br-text-input-left",
+          "difficulty": 0,
+          "describe": "創建一個簡單的表單讓使用者輸入資訊。",
+          "condition": "使用 \u003cform\u003e 標籤，並在其中加入 \u003clabel\u003e, \u003cinput type=\"text\"\u003e, \u003cinput type=\"password\"\u003e, \u003ctextarea\u003e, \u003cbutton type=\"submit\"\u003e 等元素。"
+        }
+      ]
+    },
+    {
+      "title": "第二章：為網頁披上華服 (The CSS Stylist)",
+      "describe": "學習 CSS 的基本語法和樣式設計，讓網頁更美觀。",
+      "tasks": [
+        {
+          "name": "任務 2.1：連接樣式 - CSS 的引入",
+          "icon": "fi fi-br-magic-wand",
+          "difficulty": 0,
+          "describe": "學會將 CSS 樣式應用到 HTML 上。",
+          "condition": "嘗試三種方式：使用 \u003cstyle\u003e 標籤寫內部樣式、使用外部 .css 檔案並透過 \u003clink\u003e 引入、使用元素的 style 屬性寫行內樣式。"
+        },
+        {
+          "name": "任務 2.2：精準打擊 - 選擇器",
+          "icon": "fi fi-br-search",
+          "difficulty": 1,
+          "describe": "學會選中你想改變樣式的 HTML 元素。",
+          "condition": "分別使用元素選擇器 (如 p)、類別選擇器 (如 .my-class)、ID 選擇器 (如 #unique-id) 來選中元素並改變它們的顏色。"
+        },
+        {
+          "name": "任務 2.3：色彩與文字 - 基本樣式",
+          "icon": "fi fi-br-palette",
+          "difficulty": 0,
+          "describe": "改變網頁的文字顏色、背景顏色、字體大小和字型。",
+          "condition": "練習使用 color, background-color, font-size, font-family 屬性。"
+        },
+        {
+          "name": "任務 2.4：空間的藝術 - 盒模型",
+          "icon": "fi fi-br-layout-fluid",
+          "difficulty": 2,
+          "describe": "理解元素佔據空間的方式：內容、內距、邊框、外距。",
+          "condition": "對一個 \u003cdiv\u003e 元素設定 width, height, padding, border, margin，並使用瀏覽器開發者工具觀察其盒模型。"
+        },
+        {
+          "name": "任務 2.5：排列整齊 - Display 屬性",
+          "icon": "fi fi-br-eye",
+          "difficulty": 1,
+          "describe": "控制元素的顯示方式（塊級、行內）。",
+          "condition": "觀察並嘗試修改 \u003cdiv\u003e (預設 block) 和 \u003cspan\u003e (預設 inline) 的 display 屬性為 block, inline, inline-block, none，並觀察其行為變化。"
+        },
+        {
+          "name": "任務 2.6：彈性佈局 - Flexbox 初探",
+          "icon": "fi fi-br-layout-fluid",
+          "difficulty": 3,
+          "describe": "使用 Flexbox 進行一維佈局，輕鬆實現對齊。",
+          "condition": "創建一個父容器設定 display: flex，並使用 justify-content, align-items 來排列裡面的子元素。"
+        },
+        {
+          "name": "任務 2.7：網格系統 - Grid 初探",
+          "icon": "fi fi-br-grid",
+          "difficulty": 3,
+          "describe": "使用 Grid 進行二維佈局，劃分頁面區域。",
+          "condition": "創建一個父容器設定 display: grid，並使用 grid-template-columns 和 grid-template-rows 來定義網格結構。"
+        },
+        {
+          "name": "任務 2.8：隨機應變 - 響應式基礎",
+          "icon": "fi fi-br-arrows-alt-h",
+          "difficulty": 4,
+          "describe": "讓網頁在不同螢幕寬度下有不同的樣式。",
+          "condition": "使用 @media 查詢，讓網頁在螢幕寬度小於 600px 時，改變某個元素的背景顏色或字體大小。"
+        }
+      ]
+    },
+    {
+      "title": "第三章：注入靈魂 - JavaScript 與互動 (The DOM Alchemist)",
+      "describe": "學習 JavaScript 的基本語法和 DOM 操作，讓網頁具有互動性。",
+      "tasks": [
+        {
+          "name": "任務 3.0：注入指令 - 在 console 中運行",
+          "icon": "fi fi-br-square-terminal",
+          "difficulty": 0,
+          "describe": "在 devtool 的 console 中注入 alert 指令。",
+          "condition": "在瀏覽器的開發者工具中，打開 console，輸入 alert('Hello World!') 並執行。"
+        },
+        {
+          "name": "任務 3.1：啟動引擎 - 引入 JavaScript",
+          "icon": "fi fi-br-script",
+          "difficulty": 0,
+          "describe": "將 JavaScript 程式碼加入你的網頁。",
+          "condition": "使用 \u003cscript\u003e 標籤（在 \u003chead\u003e 或 \u003cbody\u003e 底部）引入一個外部 .js 檔案，或直接在 \u003cscript\u003e 標籤內寫程式碼，並成功執行 console.log('Hello World!'); 在瀏覽器控制台看到輸出。"
+        },
+        {
+          "name": "任務 3.2：記憶與計算 - 變數與運算",
+          "icon": "fi-br-calculator-simple",
+          "difficulty": 0,
+          "describe": "學習儲存資料和進行基本運算。",
+          "condition": "練習使用 let, const 宣告變數，儲存數字、字串、布林值，並進行加減乘除、比較大小、邏輯與或非等運算，將結果 console.log 出來。"
+        },
+        {
+          "name": "任務 3.3：決策之路 - 條件判斷",
+          "icon": "fi fi-br-condition-alt",
+          "difficulty": 0,
+          "describe": "讓程式根據不同條件執行不同動作。",
+          "condition": "使用 if...else if...else 結構，根據一個變數的值，在控制台輸出不同的訊息。"
+        },
+        {
+          "name": "任務 3.4：重複的藝術 - 迴圈",
+          "icon": "fi fi-br-loop-square",
+          "difficulty": 1,
+          "describe": "學習重複執行某段程式碼。",
+          "condition": "使用 for 迴圈在控制台輸出數字 1 到 5。"
+        },
+        {
+          "name": "任務 3.5：魔法咒語 - 函式",
+          "icon": "fi fi-br-magic-wand",
+          "difficulty": 1,
+          "describe": "學習封裝程式碼，使其可重複使用。",
+          "condition": "定義一個函式，接收一個名字作為參數，並在控制台輸出 \"Hello, [名字]!\"，然後呼叫這個函式。"
+        },
+        {
+          "name": "任務 3.6：元素獵手 - DOM 選擇",
+          "icon": "fi fi-br-table-tree",
+          "difficulty": 2,
+          "describe": "使用 JavaScript 選取網頁上的 HTML 元素。",
+          "condition": "使用 document.getElementById(), document.querySelector(), document.querySelectorAll() 選取不同的元素，並將選取的元素 console.log 出來。"
+        },
+        {
+          "name": "任務 3.7：點石成金 - DOM 操作",
+          "icon": "fi fi-br-confetti",
+          "difficulty": 2,
+          "describe": "使用 JavaScript 修改網頁元素的內容、樣式和屬性。",
+          "condition": "選取一個 \u003cp\u003e 元素，修改它的 textContent；選取一個 \u003cdiv\u003e 元素，修改它的 style.backgroundColor；選取一個 \u003cimg\u003e 元素，修改它的 src 屬性。"
+        },
+        {
+          "name": "任務 3.8：傾聽世界 - 事件監聽",
+          "icon": "fi fi-br-seal-exclamation",
+          "difficulty": 2,
+          "describe": "讓網頁對使用者的操作（如點擊）做出反應。",
+          "condition": "選取一個按鈕元素，使用 addEventListener 監聽 click 事件，當按鈕被點擊時，在控制台輸出一條訊息，或改變頁面上某個元素的文字。"
+        },
+        {
+          "name": "任務 3.9：阻止預設 - 事件處理進階",
+          "icon": "fi fi-br-ban",
+          "difficulty": 3,
+          "describe": "理解事件物件，並阻止表單提交等預設行為。",
+          "condition": "為一個表單的 submit 事件添加監聽器，在函式中使用 event.preventDefault() 來阻止表單提交的預設跳轉行為，並在控制台輸出 \"Form submit prevented\"。"
+        },
+        {
+          "name": "任務 3.10：表單驗證 - 事件處理進階",
+          "icon": "fi fi-br-check",
+          "difficulty": 1,
+          "describe": "學習如何驗證表單輸入的有效性。",
+          "condition": "為一個表單的 submit 事件添加監聽器，檢查輸入是否符合要求，並在控制台輸出相應的驗證結果。"
+        },
+        {
+          "name": "任務 3.11：網頁的魔法 - DOM 操作進階",
+          "icon": "fi fi-br-multiple",
+          "difficulty": 2,
+          "describe": "學習如何動態創建 DOM 元素。",
+          "condition": "使用 document.createElement() 創建一個新的 \u003cp\u003e 元素，並將其添加到網頁中。"
+        },
+        {
+          "name": "任務 3.12：網頁的魔法 - DOM 操作進階",
+          "icon": "fi fi-br-trash-xmark",
+          "difficulty": 2,
+          "describe": "學習如何刪除 DOM 元素。",
+          "condition": "刪除一個已存在的 DOM 元素，使用 parentNode.removeChild() 或 remove() 方法。"
+        },
+        {
+          "name": "任務 3.13：網頁的魔法 - DOM 操作進階",
+          "icon": "fi fi-br-sort",
+          "difficulty": 2,
+          "describe": "學習如何重新排列 DOM 元素。",
+          "condition": "使用 insertBefore() 或 appendChild() 方法，將一個元素移動到另一個元素之前或之後。"
+        }
+      ]
+    },
+    {
+      "title": "第四章：現代開發工具箱 (The Modern Toolkit)",
+      "describe": "學習現代開發工具和語法，提升開發效率。",
+      "tasks": [
+        {
+          "name": "任務 4.1：語法進化 - ES6+ 基礎",
+          "icon": "fi fi-br-features",
+          "difficulty": 0,
+          "describe": "掌握更現代、更方便的 JavaScript 語法。",
+          "condition": "練習使用 let/const 替代 var、箭頭函式 (=>)、樣板字面值 (反引號 `)、陣列和物件的解構賦值。"
+        },
+        {
+          "name": "任務 4.2：非同步的承諾 - Promises",
+          "icon": "fi fi-br-alarm-clock",
+          "difficulty": 1,
+          "describe": "理解並處理非同步操作（如模擬的網路請求）。",
+          "condition": "創建一個簡單的 Promise，模擬一個延遲操作，並使用 .then() 來處理成功情況，.catch() 來處理失敗情況。"
+        },
+        {
+          "name": "任務 4.3：優雅的等待 - Async/Await",
+          "icon": "fi fi-br-alarm-clock",
+          "difficulty": 1,
+          "describe": "使用更直觀的方式處理 Promise。",
+          "condition": "將使用 .then() 的 Promise 操作，改寫成使用 async 函式和 await 關鍵字的形式。"
+        },
+        {
+          "name": "任務 4.4：開發者的時光機 - Git 基礎",
+          "icon": "fi fi-br-code-commit",
+          "difficulty": 2,
+          "describe": "學習使用 Git 進行版本控制。",
+          "condition": "初始化一個 Git 倉庫 (git init)，將你的專案檔案加入 (git add .)，提交一個版本 (git commit -m \"Initial commit\")。"
+        },
+        {
+          "name": "任務 4.5：遠端協作 - GitHub ",
+          "icon": "fi fi-brands-github",
+          "difficulty": 2,
+          "describe": "將你的本地倉庫推送到遠端平台。",
+          "condition": "在 GitHub 上創建一個空倉庫，將本地倉庫與遠端連結 (git remote add origin ...)，並將你的提交推送上去 (git push origin main)。"
+        },
+        {
+          "name": "任務 4.6：管理你的武器庫 - npm 基礎",
+          "icon": "fi fi-br-books",
+          "difficulty": 1,
+          "describe": "學習使用套件管理器來安裝和管理專案依賴。",
+          "condition": "在你的專案目錄下執行 npm init -y 創建 package.json，然後使用 npm install \u003cpackage-name\u003e 安裝一個簡單的套件（例如 lodash），並觀察 node_modules 資料夾和 package.json 的變化。"
+        }
+      ]
+    },
+    {
+      "title": "第五章：元件化革命 - React (The Component Craftsman)",
+      "describe": "學習 React 的基本概念和語法，讓網頁具有元件化的結構。",
+      "tasks": [
+        {
+          "name": "任務 5.1：搭建 React 工坊 - 環境設置",
+          "icon": "fi fi-br-react",
+          "difficulty": 1,
+          "describe": "使用現代工具快速創建一個 React 開發環境。",
+          "condition": "使用 npx create-react-app my-app 成功創建一個 React 專案，並啟動開發伺服器 (npm start 或 npm run dev)，在瀏覽器看到預設的 React 頁面。"
+        },
+        {
+          "name": "任務 5.2：神奇的 JSX - 語法初探",
+          "icon": "fi fi-br-react",
+          "difficulty": 1,
+          "describe": "在 JavaScript 中編寫類似 HTML 的結構。",
+          "condition": "在 React 元件的 return 語句中，編寫包含 HTML 標籤和 JavaScript 表達式 ({}) 的 JSX 程式碼，並成功渲染。"
+        },
+        {
+          "name": "任務 5.3：萬物皆元件 - Functional Component",
+          "icon": "fi fi-br-tool-marquee",
+          "difficulty": 1,
+          "describe": "將 UI 拆分成可重複使用的元件。",
+          "condition": "創建一個簡單的函數元件（例如 Greeting），並在主要的 App 元件中引入並使用它。"
+        },
+        {
+          "name": "任務 5.4：資料傳遞 - Props",
+          "icon": "fi fi-br-folder",
+          "difficulty": 1,
+          "describe": "從父元件向子元件傳遞資料。",
+          "condition": "在 App 元件中向 Greeting 元件傳遞一個 name 屬性 (prop)，並在 Greeting 元件中接收並顯示這個名字。"
+        },
+        {
+          "name": "任務 5.5：元件的記憶 - State 與 useState",
+          "icon": "fi fi-br-clip",
+          "difficulty": 1,
+          "describe": "讓元件擁有自己的內部狀態，並能響應變化。",
+          "condition": "在一個元件中使用 useState Hook 創建一個計數器狀態，並添加一個按鈕，每次點擊時更新狀態使計數器加一，並在畫面上顯示計數結果。"
+        },
+        {
+          "name": "任務 5.6：動態展示 - 條件渲染",
+          "icon": "fi fi-br-condition-alt",
+          "difficulty": 2,
+          "describe": "根據條件決定是否渲染某個元素或元件。",
+          "condition": "在元件中根據一個狀態（例如 isLoggedIn）的值，決定顯示 \"Welcome back!\" 還是 \"Please log in.\"。"
+        },
+        {
+          "name": "任務 5.7：列表生成 - 渲染陣列與 Keys",
+          "icon": "fi fi-br-list",
+          "difficulty": 1,
+          "describe": "將陣列資料渲染成列表。",
+          "condition": "在元件中有一個包含字串的陣列，使用 .map() 方法將其渲染成一個 \u003cul\u003e 列表，並為每個 \u003cli\u003e 元素提供一個唯一的 key 屬性。"
+        },
+        {
+          "name": "任務 5.8：響應互動 - React 中的事件處理",
+          "icon": "fi fi-br-seal-exclamation",
+          "difficulty": 2,
+          "describe": "在 React 元件中處理使用者事件。",
+          "condition": "在一個 \u003cinput\u003e 元素上添加 onChange 事件處理器，將輸入的值同步更新到元件的 state 中，並在頁面上顯示出來。"
+        },
+        {
+          "name": "任務 5.9：副作用管理 - useEffect",
+          "icon": "fi fi-br-seal-exclamation",
+          "difficulty": 3,
+          "describe": "學習處理元件渲染之外的操作，如 API 請求或訂閱。",
+          "condition": "使用 useEffect Hook，在元件首次渲染後，在控制台輸出一條訊息 \"Component mounted\"。嘗試理解依賴陣列 ([]) 的作用。"
+        },
+        {
+          "name": "任務 5.10：單頁導航 - React Router",
+          "icon": "fi fi-br-window-alt",
+          "difficulty": 2,
+          "describe": "在 React 應用中實現頁面間的跳轉，而無需重新載入整個頁面。",
+          "condition": "安裝 react-router-dom，設定至少兩個路由 (/ 和 /about)，並使用 \u003cLink\u003e 元件在頁面間進行導航。"
+        }
+      ]
+    },
+    {
+      "title": "第六章：全端框架之力 - Next.js (The Framework Master)",
+      "describe": "學習 Next.js 的基本概念和語法，讓 React 應用更強大。",
+      "tasks": [
+        {
+          "name": "任務 6.1：Next.js 起手式 - 專案創建",
+          "icon": "fi fi-br-folder-tree",
+          "difficulty": 0,
+          "describe": "使用官方工具創建一個 Next.js 專案。",
+          "condition": "執行 npx create-next-app@latest，按照提示完成專案創建。並成功啟動開發伺服器 (npm run dev)。"
+        },
+        {
+          "name": "任務 6.2：路由天成 - Page Router 基礎",
+          "icon": "fi fi-br-window-alt",
+          "difficulty": 2,
+          "describe": "理解 Next.js Page Router 基於檔案系統的路由機制。",
+          "condition": "觀察 pages/ 目錄下的 index.js (首頁) 和 layout.js (佈局)。嘗試創建一個新的路由，並在瀏覽器中訪問 /about 路徑。"
+        },
+        {
+          "name": "任務 6.3：共享空間 - Layouts",
+          "icon": "fi fi-br-table-layout",
+          "difficulty": 1,
+          "describe": "創建跨頁面共享的 UI 結構。",
+          "condition": "修改根目錄下的 pages/layout.js，添加一個簡單的 Header 或 Footer，確保它在你創建的所有頁面（首頁和 about 頁）都顯示。"
+        },
+        {
+          "name": "任務 6.4：伺服器的力量 - Server Components",
+          "icon": "fi fi-br-database",
+          "difficulty": 2,
+          "describe": "理解 Next.js 預設的 Server Components 如何在伺服器端渲染。",
+          "condition": "在一個 pages/index.js（預設是 Server Component）中直接 console.log 一些訊息，觀察訊息出現在終端機 (伺服器端) 而不是瀏覽器控制台。嘗試在 Server Component 中直接 fetch 資料（需要 async）。"
+        },
+        {
+          "name": "任務 6.5：客戶端的互動 - Client Components",
+          "icon": "fi fi-br-window-alt",
+          "difficulty": 2,
+          "describe": "學習如何標記需要在瀏覽器中執行互動邏輯的元件。",
+          "condition": "創建一個新的元件檔案在裡面使用 useState 和 useEffect，並在一個 pages/index.js 中引入並使用這個 Client Component。"
+        },
+        {
+          "name": "任務 6.6：無縫跳轉 - next/link",
+          "icon": "fi fi-br-link-alt",
+          "difficulty": 2,
+          "describe": "使用 Next.js 的方式實現客戶端路由跳轉。",
+          "condition": "在你的頁面中使用 next/link 元件創建連結，指向你專案中的其他頁面（例如從首頁連到 /about），點擊連結時觀察瀏覽器地址欄變化，但頁面沒有完全重新載入。"
+        },
+        {
+          "name": "任務 6.7：靜態與動態 - 渲染策略初探",
+          "icon": "fi fi-br-window-alt",
+          "difficulty": 2,
+          "describe": "了解 Next.js 如何決定頁面是靜態生成 (SSG) 還是動態渲染 (SSR)。",
+          "condition": "閱讀 Next.js 文件關於 Rendering 的部分，理解 Server Component 預設會盡可能靜態渲染，而使用動態函數 (如 headers(), cookies()) 或動態路由段會觸發動態渲染。"
+        },
+        {
+          "name": "任務 6.8：後端接口 - API Routes",
+          "icon": "fi fi-br-api",
+          "difficulty": 2,
+          "describe": "在 Next.js 專案中創建自己的 API 端點。",
+          "condition": "在 pages/api/hello.js 中創建一個簡單的 API Route，導出一個處理函式，返回一個 JSON 回應。然後在瀏覽器中訪問 /api/hello，確認看到 JSON 數據。"
+        },
+        {
+          "name": "任務 6.9：優化大師 - 內建優化元件",
+          "icon": "fi fi-br-window-alt",
+          "difficulty": 2,
+          "describe": "使用 Next.js 提供的元件來優化圖片和字體。",
+          "condition": "將專案中的 \u003cimg\u003e 標籤替換為 next/image 元件。嘗試使用 next/font 來載入和優化網頁字體。"
+        },
+        {
+          "name": "任務 6.10：跟上現代 - 使用 App Router",
+          "icon": "fi fi-br-window-alt",
+          "difficulty": 4,
+          "describe": "學習如何使用 Next.js 的 App Router 來管理路由和頁面。",
+          "condition": "了解 App Router 的基本概念，並嘗試在專案中實現一個簡單的路由配置。"
+        }
+      ]
+    }
+  ]
+}
